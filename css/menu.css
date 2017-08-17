@@ -1,0 +1,139 @@
+/*Header Menu*/
+
+.headermenu{
+height:35px;
+}
+
+.headermenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.headermenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+
+.headermenu ul li a{
+display: block;
+line-height: 35px;
+padding: 0 15px;
+font-size: 16px;
+text-decoration: none;
+font-weight:700;
+}
+
+* html .headermenu ul li a{ 
+display: inline-block;
+}
+
+.headermenu ul li a:link, .headermenu ul li a:visited{
+
+color: #666;
+}
+
+.headermenu ul li ul li a:link, .headermenu ul li ul li a:visited{
+
+color: #fff;
+}
+
+.headermenu ul li a.selected{ 
+	color: #ff6600;
+}
+
+.headermenu ul li a:hover {
+	color: #ff6600;
+}
+	
+.headermenu ul li ul{
+position: absolute;
+left: 0;
+display: none;
+visibility: hidden;
+background:#fff;
+top:3px;
+}
+
+.headermenu ul li ul li{
+display: list-item;
+float: none;
+text-align: left;
+margin-left: 0px;
+top:0px;
+padding: 0px;
+}
+
+.headermenu ul li ul li ul li{
+top: 0;
+left:2px;
+}
+
+.headermenu ul li ul li a{
+font-size:14px;
+width: 180px;
+margin: 0;
+border-top-width: 0;
+line-height:20px;
+padding: 8px 10px;
+text-transform:none;
+background: #ff6600;
+border-bottom:1px solid #fff;
+}
+
+.headermenu ul li ul li a:hover {
+}
+
+
+* html .headermenu{height: 1%;} 
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 9px;
+right: 5px;
+}
+
+
+.ddshadow{ 
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: transparent;
+}
+
+.toplevelshadow{ 
+opacity: 0.8;
+}
+
+/*Header Menu - END*/
+
+#mobilemenu{
+	display:none;
+	float:right;
+	width:150px;
+}
+
+
+@media screen and (max-width: 959px) {
+
+#menu{
+	display:none;
+}
+
+#mobilemenu{
+	display:block;	
+}
+
+}
+

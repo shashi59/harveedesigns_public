@@ -1,0 +1,10 @@
+<FilesMatch "\.(htm|html)$">
+  Options +ExecCGI
+</FilesMatch>
+AddHandler fcgid-script .html
+FCGIWrapper /usr/local/cpanel/cgi-sys/php5 .html
+ 
+RewriteCond %{HTTP_HOST} ^harveeslittlenest.com [NC]
+RewriteRule ^(.*)$ http://www.harveeslittlenest.com/$1 [L,R=301]
+Options -Indexes
+ErrorDocument 404 http://www.harveeslittlenest.com/404.html
